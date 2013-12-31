@@ -1,0 +1,140 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+
+body { 
+	background-color: #ffa70d;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.6;
+	border: 10px;
+	margin: inherit;
+}
+
+a { 
+	color: #2ba6cb;
+	text-decoration: none;
+ }
+
+a:hover { 
+	color: #2795b6;
+	text-decoration:underline;
+}
+
+ul { font-weight: bold; }
+
+p{  
+	color: black;
+	margin-bottom:1.25em;
+	margin-top: inherit;
+}
+
+h2,h3 { margin:inherit;}
+
+h2.blogh2 {
+	margin:20px;
+	line-height: 1;
+}
+
+h6{ 
+	margin-bottom: 20px;
+	margin-top: inherit;
+}
+
+
+
+.homelogo {
+	width:400px;
+	height:430px;
+	position: absolute;
+	margin: -200px 0 0 -200px;
+  	left: 50%;
+  	top: 40%;
+	background: url(images/bariisa_logo400_web.png) no-repeat center;
+
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+	-moz-animation-name: logodrop;
+    -moz-animation-iteration-count: once;
+    -moz-animation-timing-function: cubic-bezier(".37,0,.37,1");
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: logodrop;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: cubic-bezier(".37,0,.37,1");
+    -webkit-animation-duration: 1s;
+
+	}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+	}
+
+	/* Firefox */
+@-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+	}
+
+	/* Safari and Chrome */
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+@-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+	}​
+
+	/* Opera */
+@-o-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+	}
+
+@-moz-keyframes logodrop {
+    0% { top: 37%;}
+    100% { top: 40%;}
+}
+
+@-webkit-keyframes logodrop {
+    0% { top: 37%; }
+    100% { top: 40%; }
+}
+
+
+
+
+
+
+
+#top, #bottom, #left, #right {
+	background: #21304b;
+	position: fixed;
+	}
+#left, #right {
+    top: 25px; 
+    bottom: 25px;
+    width: 3px;
+}
+#left { left: 25px; }
+#right { right: 25px; }
+#top, #bottom {
+    left: 25px; 
+    right: 25px;
+    height: 3px;
+}
+#top { top: 25px; }
+#bottom { bottom: 25px; }
+
+
+
