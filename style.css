@@ -14,35 +14,6 @@ body {
 	margin: inherit;
 }
 
-a { 
-	color: #2ba6cb;
-	text-decoration: none;
- }
-
-a:hover { 
-	color: #2795b6;
-	text-decoration:underline;
-}
-
-ul { font-weight: bold; }
-
-p{  
-	color: black;
-	margin-bottom:1.25em;
-	margin-top: inherit;
-}
-
-h2,h3 { margin:inherit;}
-
-h2.blogh2 {
-	margin:20px;
-	line-height: 1;
-}
-
-h6{ 
-	margin-bottom: 20px;
-	margin-top: inherit;
-}
 
 
 
