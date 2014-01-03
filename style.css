@@ -26,21 +26,11 @@ body {
   	top: 40%;
 	background: url(images/bariisa_logo400_web.png) no-repeat center;
 
-	-webkit-animation: fadein 2s; /* Safari and Chrome */
-    -moz-animation: fadein 2s; /* Firefox */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera */
-    animation: fadein 2s;
-	-moz-animation-name: logodrop;
-    -moz-animation-iteration-count: once;
-    -moz-animation-timing-function: cubic-bezier(".37,0,.37,1");
-    -moz-animation-duration: 1s;
-
-    -webkit-animation-name: logodrop;
-    -webkit-animation-iteration-count: once;
-    -webkit-animation-timing-function: cubic-bezier(".37,0,.37,1");
-    -webkit-animation-duration: 1s;
-
+	-webkit-animation: fadein 1s, logodrop 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s, logodrop 1s; /* Firefox */
+    -ms-animation: fadein 1s, logodrop 1s; /* Internet Explorer */
+    -o-animation: fadein 1s, logodrop 1s; /* Opera */
+    animation: fadein 1s, logodrop 1s;
 	}
 
 @keyframes fadein {
@@ -73,12 +63,12 @@ body {
 	}
 
 @-moz-keyframes logodrop {
-    0% { top: 37%;}
+    0% { top: 38%;}
     100% { top: 40%;}
 }
 
 @-webkit-keyframes logodrop {
-    0% { top: 37%; }
+    0% { top: 38%; }
     100% { top: 40%; }
 }
 
